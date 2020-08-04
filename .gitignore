@@ -1,3 +1,6 @@
 venv/
 env/
 speechyolo_model/*
+models/
+data/
+__pycache__/

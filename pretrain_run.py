@@ -14,17 +14,17 @@ import sys
 # Training settings
 parser = argparse.ArgumentParser(
     description='ConvNets for Speech Commands Recognition')
-parser.add_argument('--train_path', default='gcommand_toy_example/train',
+parser.add_argument('--train_path', default='data/train',
                     help='path to the train data folder')
-parser.add_argument('--test_path', default='gcommand_toy_example/test',
+parser.add_argument('--test_path', default='data/test',
                     help='path to the test data folder')
-parser.add_argument('--valid_path', default='gcommand_toy_example/valid',
+parser.add_argument('--valid_path', default='data/val',
                     help='path to the valid data folder')
 parser.add_argument('--batch_size', type=int, default=32,
                     metavar='N', help='training and valid batch size')
 parser.add_argument('--test_batch_size', type=int, default=100,
                     metavar='N', help='batch size for testing')
-parser.add_argument('--arc', default='VGG11',
+parser.add_argument('--arc', default='VGG19',
                     help='network architecture: VGG11, VGG13, VGG16, VGG19')
 parser.add_argument('--epochs', type=int, default=100,
                     metavar='N', help='number of epochs to train')
